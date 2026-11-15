@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#101014">
+<meta name="description" content="Baise.com — espace de rencontres réservé aux adultes.">
 <title>Baise.com — Rencontres entre adultes</title>
 <style>
 :root{--bg:#101014;--panel:#1a1a22;--panel2:#22222c;--text:#f7f4f5;--muted:#aaa5b0;--accent:#e94d79;--accent2:#ff7898;--line:#343440;--good:#8bd5a8}
@@ -13,7 +14,7 @@ header{position:sticky;top:0;z-index:5;background:#101014ed;border-bottom:1px so
 button,.btn{border:0;border-radius:12px;padding:12px 17px;background:var(--accent);color:white;font-weight:750;cursor:pointer;font-size:.95rem}button:hover,.btn:hover{background:var(--accent2)}button.secondary,.btn.secondary{background:var(--panel2);border:1px solid var(--line)}button:disabled{opacity:.55;cursor:not-allowed}
 .hero{padding:76px 0 60px;display:grid;grid-template-columns:1.25fr .75fr;gap:35px;align-items:center}.eyebrow{color:var(--accent2);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}.hero h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:1.02;letter-spacing:-3px;margin:14px 0}.hero p{max-width:620px;color:var(--muted);font-size:1.1rem}.hero-card{background:linear-gradient(145deg,#2d1d29,#1a1a22);border:1px solid #5a3446;border-radius:24px;padding:30px;box-shadow:0 25px 80px #0006}.hero-card .symbol{font-size:4rem}.hero-card h3{font-size:1.5rem;margin:10px 0}.hero-card p{font-size:.95rem}
 section{padding:35px 0 55px}.section-title{font-size:1.8rem;letter-spacing:-.7px;margin:0 0 8px}.sub{color:var(--muted);margin:0 0 24px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.tile,.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px}.tile h3{margin:10px 0 5px}.tile p{color:var(--muted);margin:0}.tile .ico{font-size:1.8rem}
-.panel{max-width:720px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}label{font-size:.9rem;color:#ddd6dd}input,textarea,select{width:100%;background:#111117;color:white;border:1px solid var(--line);border-radius:10px;padding:12px;font:inherit}input:focus,textarea:focus,select:focus{outline:2px solid #e94d7970;border-color:var(--accent)}.hint,.status{font-size:.88rem;color:var(--muted)}.status{margin-top:12px;min-height:24px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.hidden{display:none!important}.notice{border-left:3px solid var(--accent);padding:12px 15px;background:#251923;color:#e8dbe1;border-radius:0 10px 10px 0;font-size:.9rem}
+.panel{max-width:720px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}label{font-size:.9rem;color:#ddd6dd}input,textarea,select{width:100%;background:#111117;color:white;border:1px solid var(--line);border-radius:10px;padding:12px;font:inherit}input:focus,textarea:focus,select:focus{outline:2px solid #e94d7970;border-color:var(--accent)}.hint,.status{font-size:.88rem;color:var(--muted)}.status{margin-top:12px;min-height:24px;overflow-wrap:anywhere}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.hidden{display:none!important}.notice{border-left:3px solid var(--accent);padding:12px 15px;background:#251923;color:#e8dbe1;border-radius:0 10px 10px 0;font-size:.9rem}
 footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:.88rem}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 #ageGate{position:fixed;inset:0;background:#08080cf2;z-index:20;display:grid;place-items:center;padding:20px}.gate{max-width:490px;background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:28px}.gate h2{margin-top:0}.gate p{color:var(--muted)}.check{display:flex;gap:10px;align-items:flex-start;margin:18px 0}.check input{width:auto;margin-top:5px}.tiny{font-size:.78rem;color:var(--muted)}
 @media(max-width:760px){.hero{grid-template-columns:1fr;padding:50px 0 35px}.grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}nav{gap:10px}nav a{display:none}.nav{height:60px}.hero h1{letter-spacing:-2px}}
@@ -47,64 +48,75 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);f
   <div class="grid">
    <div class="tile"><div class="ico">◉</div><h3>Votre profil</h3><p>Créez un profil avec un pseudonyme et une courte présentation.</p></div>
    <div class="tile"><div class="ico">♡</div><h3>Prise de contact</h3><p>Envoyez une demande de contact et respectez la réponse de l'autre personne.</p></div>
-   <div class="tile"><div class="ico">盾</div><h3>Respect et sécurité</h3><p>Signalez les abus. Ne partagez jamais d'informations sensibles avec des inconnus.</p></div>
+   <div class="tile"><div class="ico">盾</div><h3>Respect et sécurité</h3><p>Respectez les limites des autres membres et ne partagez pas d'informations sensibles avec des inconnus.</p></div>
   </div>
  </section>
- <section id="inscription"><div class="eyebrow">Créer un compte</div><h2 class="section-title">Rejoindre Baise.com</h2><p class="sub">L'inscription nécessite une configuration Supabase valide.</p>
+ <section id="inscription"><div class="eyebrow">Créer un compte</div><h2 class="section-title">Rejoindre Baise.com</h2><p class="sub">Créez votre compte avec votre adresse e-mail et un mot de passe.</p>
   <div class="panel">
    <form id="signupForm"><div class="form-grid">
     <div class="field"><label for="signupEmail">Adresse e-mail</label><input id="signupEmail" type="email" autocomplete="email" required></div>
-    <div class="field"><label for="signupPassword">Mot de passe</label><input id="signupPassword" type="password" minlength="8" autocomplete="new-password" required></div>
+    <div class="field"><label for="signupPassword">Mot de passe (8 caractères minimum)</label><input id="signupPassword" type="password" minlength="8" autocomplete="new-password" required></div>
     <div class="field"><label for="nickname">Pseudonyme</label><input id="nickname" maxlength="30" required></div>
     <div class="field"><label for="ageConfirm">Confirmation de majorité</label><select id="ageConfirm" required><option value="">Choisir…</option><option value="yes">J'ai 18 ans ou plus</option></select></div>
     <div class="field full"><label for="bio">Présentation (facultatif)</label><textarea id="bio" rows="3" maxlength="300" placeholder="Présentez-vous en quelques mots."></textarea></div>
-   </div><div class="actions"><button type="submit">Créer mon compte</button></div><div id="signupStatus" class="status" role="status"></div></form>
-   <p class="hint">La confirmation de majorité dans ce formulaire ne remplace pas un dispositif fiable de vérification d'âge.</p>
+   </div><div class="actions"><button id="signupBtn" type="submit">Créer mon compte</button></div><div id="signupStatus" class="status" role="status" aria-live="polite"></div></form>
+   <p class="hint">Selon les réglages du service, une confirmation par e-mail peut être nécessaire avant la première connexion.</p>
   </div>
  </section>
  <section id="connexion"><div class="eyebrow">Déjà membre</div><h2 class="section-title">Connexion</h2>
   <div class="panel"><form id="loginForm"><div class="form-grid">
    <div class="field full"><label for="loginEmail">Adresse e-mail</label><input id="loginEmail" type="email" autocomplete="email" required></div>
    <div class="field full"><label for="loginPassword">Mot de passe</label><input id="loginPassword" type="password" autocomplete="current-password" required></div>
-  </div><div class="actions"><button type="submit">Se connecter</button><button type="button" class="secondary" id="logoutBtn">Se déconnecter</button></div><div id="loginStatus" class="status" role="status"></div></form></div>
+  </div><div class="actions"><button id="loginBtn" type="submit">Se connecter</button><button type="button" class="secondary" id="logoutBtn">Se déconnecter</button></div><div id="loginStatus" class="status" role="status" aria-live="polite"></div></form></div>
  </section>
- <section><div class="notice"><strong>Avant toute mise en ligne publique :</strong> configurez une vraie vérification d'âge, la modération humaine, le signalement et le blocage, la suppression de compte, les conditions d'utilisation et la politique de confidentialité. Faites auditer les règles d'accès à la base de données. Ne collectez pas de données sensibles sans nécessité.</div></section>
+ <section><div class="notice"><strong>Important avant une ouverture publique :</strong> la case 18+ ne vérifie pas réellement l'âge. Il faut mettre en place une vérification d'âge adaptée, la modération, le signalement et le blocage, la suppression de compte, les conditions d'utilisation, la politique de confidentialité et des règles de sécurité strictes sur la base de données.</div></section>
 </main>
 <footer><div class="wrap footer-row"><div><strong>baise.com</strong><br>Rencontres entre adultes.</div><div>18+ · Respect · Consentement · Confidentialité</div><div>© <span id="year"></span> Baise.com</div></div></footer>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
-/* CONFIGURATION : remplacez ces deux valeurs par celles de votre projet Supabase.
-   Utilisez uniquement la clé publique anon/publishable. Jamais la clé service_role. */
-const SUPABASE_URL = "VOTRE_URL_SUPABASE";
-const SUPABASE_ANON_KEY = "VOTRE_CLE_PUBLIQUE_ANON";
+/* Clé publique (publishable) uniquement. Ne jamais placer une clé secrète/service_role ici. */
+const SUPABASE_URL = "https://c--6e550fee-91ec-418b-b7e4-4e1496031a73-prod.lovable.cloud";
+const SUPABASE_ANON_KEY = "sb_publishable_SHPncVVO4CPKxC_H2B-q_gT_lmeov80";
 let supabaseClient = null;
-if (window.supabase && SUPABASE_URL.startsWith("https://") && !SUPABASE_ANON_KEY.includes("VOTRE_")) {
-  supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-}
+try {
+  if (window.supabase && SUPABASE_URL.startsWith("https://") && SUPABASE_ANON_KEY.startsWith("sb_publishable_")) {
+    supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  }
+} catch (err) { console.error("Initialisation Supabase impossible", err); }
 const $ = id => document.getElementById(id);
 $("year").textContent = new Date().getFullYear();
 $("adultCheck").addEventListener("change", e => $("enterBtn").disabled = !e.target.checked);
 $("enterBtn").addEventListener("click", () => $("ageGate").classList.add("hidden"));
 function setStatus(id, message, ok=false){$(id).textContent=message;$(id).style.color=ok?"var(--good)":"#ff9bad";}
-function configured(){if(!supabaseClient){setStatus("signupStatus","Supabase n'est pas encore configuré. Ajoutez votre URL et votre clé publique dans le code.");return false;}return true;}
-$("signupForm").addEventListener("submit", async e=>{
- e.preventDefault(); if(!configured())return;
+function requireBackend(id){if(!supabaseClient){setStatus(id,"Le service de compte est momentanément indisponible. Réessayez plus tard.");return false;}return true;}
+$("signupForm").addEventListener("submit",async e=>{
+ e.preventDefault(); if(!requireBackend("signupStatus"))return;
  if($("ageConfirm").value!=="yes"){setStatus("signupStatus","Vous devez confirmer avoir 18 ans ou plus.");return;}
  const email=$("signupEmail").value.trim(), password=$("signupPassword").value, nickname=$("nickname").value.trim(), bio=$("bio").value.trim();
- setStatus("signupStatus","Création du compte…",true);
- const {data,error}=await supabaseClient.auth.signUp({email,password,options:{data:{nickname,bio}}});
- if(error){setStatus("signupStatus",error.message);return;}
- setStatus("signupStatus","Compte créé. Vérifiez votre e-mail si la confirmation est activée.",true);
+ if(nickname.length<2){setStatus("signupStatus","Choisissez un pseudonyme d'au moins 2 caractères.");return;}
+ const btn=$("signupBtn");btn.disabled=true;setStatus("signupStatus","Création du compte…",true);
+ try {
+  const {data,error}=await supabaseClient.auth.signUp({email,password,options:{data:{nickname,bio,age_confirmed:true}}});
+  if(error) throw error;
+  if(data.session) setStatus("signupStatus","Compte créé et connecté. Vous pourrez compléter votre profil ensuite.",true);
+  else setStatus("signupStatus","Demande d'inscription reçue. Vérifiez votre boîte e-mail pour confirmer votre adresse si un message vous est envoyé.",true);
+ } catch(err){setStatus("signupStatus",err.message||"Une erreur est survenue pendant l'inscription.");}
+ finally{btn.disabled=false;}
 });
 $("loginForm").addEventListener("submit",async e=>{
- e.preventDefault();if(!supabaseClient){setStatus("loginStatus","Supabase n'est pas encore configuré.");return;}
- const {data,error}=await supabaseClient.auth.signInWithPassword({email:$("loginEmail").value.trim(),password:$("loginPassword").value});
- if(error){setStatus("loginStatus",error.message);return;}
- setStatus("loginStatus","Connexion réussie.",true);
+ e.preventDefault();if(!requireBackend("loginStatus"))return;
+ const btn=$("loginBtn");btn.disabled=true;setStatus("loginStatus","Connexion…",true);
+ try{
+  const {error}=await supabaseClient.auth.signInWithPassword({email:$("loginEmail").value.trim(),password:$("loginPassword").value});
+  if(error) throw error;
+  setStatus("loginStatus","Connexion réussie.",true);
+ }catch(err){setStatus("loginStatus",err.message||"Impossible de se connecter.");}
+ finally{btn.disabled=false;}
 });
 $("logoutBtn").addEventListener("click",async()=>{
- if(!supabaseClient){setStatus("loginStatus","Supabase n'est pas encore configuré.");return;}
- const {error}=await supabaseClient.auth.signOut();setStatus("loginStatus",error?error.message:"Déconnexion effectuée.",!error);
+ if(!requireBackend("loginStatus"))return;
+ try{const {error}=await supabaseClient.auth.signOut();if(error)throw error;setStatus("loginStatus","Déconnexion effectuée.",true);}
+ catch(err){setStatus("loginStatus",err.message||"La déconnexion a échoué.");}
 });
 </script>
 </body></html>
